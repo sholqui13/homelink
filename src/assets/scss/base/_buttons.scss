@@ -1,0 +1,47 @@
+.btn {
+   font-family: $font-primary;
+   font-size: map-get($sizes, thumb);
+   padding: 1.05rem 4.9rem;
+   border: none;
+   border-radius: 2.8rem;
+   cursor: pointer;
+   font-weight: 700;
+   line-height: 1;
+   outline: none;
+   width: auto;
+   @include mq-min(md) {
+      width: auto;
+   }
+   &.btn-primary {
+      @include button( color( primary, one ), color( secondary, base ) );
+      &.outline {
+         @include button( transparent, color( primary, dark ) );
+         border: .13rem solid color( primary, dark );
+         &:hover, &:active {
+            @include button( color( primary, dark ) );
+         }
+      }
+   }
+   &.btn-secondary {
+      @include button( color( primary, base ), color( secondary, base ) );
+      &.outline {
+         @include button( transparent, color( secondary, base ) );
+         border: .15rem solid color( secondary, base );
+         &:hover, &:active {
+            @include button( color( secondary, base ), color( grayscale, white ));
+         }
+      }
+   }
+   // sizes
+   &.small {
+      padding:    ( $font-size - .50rem ) ( $font-size );
+      font-size:  ( $font-size - .25rem );
+   }
+   &.medium{
+      font-size: map-get($sizes, small);
+      padding: 11px 38px;
+   }
+}
+
+@include  mq-min(md){
+}
