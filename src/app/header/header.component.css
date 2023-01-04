@@ -1,3 +1,142 @@
-p {
-  color: red;
+header {
+  border-bottom: 0.1rem solid #646566;
+  height: 9.6rem;
+  max-height: 9.8rem;
+  margin: auto;
+}
+header .container {
+  height: -webkit-fill-available;
+  padding: 1.5rem 1.7rem;
+  width: 100%;
+  max-width: 184.3rem;
+}
+header .container-menu {
+  display: none;
+  order: -1;
+  background: white;
+  width: 100%;
+  margin-top: 3.5rem;
+  min-height: 100%;
+  z-index: 9;
+  position: absolute;
+  top: 6rem;
+  left: 0;
+}
+header .container-menu.open {
+  display: block;
+}
+header .container-menu .main-menu {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header .container-menu .main-menu .text-link {
+  padding: 3rem;
+  color: #646566;
+  cursor: pointer;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+header .container-menu .main-menu .text-link:hover {
+  font-weight: 700;
+}
+header .container .hamburguer {
+  border: none;
+  background: #ffffff;
+  font-size: 3rem;
+  color: #7f7f7f;
+  line-height: 2rem;
+}
+header .container .login {
+  display: flex;
+  align-items: center;
+}
+header .container .login_link {
+  display: none;
+}
+header .container .login_signup {
+  border: 0.1rem solid #7F7F7F;
+  border-radius: 100%;
+  width: 4rem;
+  height: 4rem;
+  background: transparent;
+}
+header .container .login_signup .icon-Vector::before {
+  content: "\e901";
+  font-family: iconFont;
+  font-size: 1.7rem;
+  color: #2443DD;
+}
+header .container .login_signup a {
+  display: none;
+}
+header .container_logo {
+  display: flex;
+  align-items: center;
+  padding-left: 1.4rem;
+  padding-top: 0.5rem;
+}
+
+@media (min-width: 960px) {
+  header .container .hamburguer {
+    display: none;
+  }
+  header .container-menu {
+    display: block;
+    position: initial;
+    width: initial;
+    margin: 0;
+    background: initial;
+  }
+  header .container-menu .main-menu {
+    flex-direction: row;
+  }
+  header .container-menu .main-menu .text-link {
+    margin-top: 1.2rem;
+  }
+  header .container-menu .main-menu .text-link:nth-child(2), header .container-menu .main-menu .text-link:nth-child(3), header .container-menu .main-menu .text-link:nth-child(4), header .container-menu .main-menu .text-link:nth-child(5) {
+    padding-left: 0.7rem;
+  }
+  header .container_logo {
+    padding-top: 1.4rem;
+  }
+  header .container .login_link {
+    display: block;
+    font-size: 1.8rem;
+    margin-right: 3.4rem;
+    margin-top: 1.4rem;
+  }
+  header .container .login_link:hover {
+    font-weight: 700;
+  }
+  header .container .login_signup {
+    border: 1px solid #2443DD;
+    border-radius: 3rem;
+    width: auto;
+    height: auto;
+    padding: 0.6rem 3.5rem 0.8rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-top: 0.6rem;
+  }
+  header .container .login_signup:hover {
+    background: #999999;
+  }
+  header .container .login_signup a {
+    display: block;
+    margin-top: 0.3rem;
+  }
+  header .container .login_signup a:hover {
+    color: #ffffff;
+    font-weight: 700;
+  }
+  header .container .login_signup .icon-Vector {
+    display: none;
+  }
+}
+@media (min-width: 1440px) {
+  header .container_logo {
+    margin-right: 24%;
+  }
 }/*# sourceMappingURL=header.component.css.map */

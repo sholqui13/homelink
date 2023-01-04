@@ -1,5 +1,5 @@
 a, button {
-	color: color( controls, base );
+	color: color( primary, dark );
 	text-decoration: none;
 	outline: 0;
    transition: color .1s ease-out;
@@ -11,7 +11,7 @@ a, button {
    }
 
 	&:hover, &:focus {
-      color: color( controls, dark );
+      color: color( primary, dark );
       @include mq-max(sm){
          text-decoration: none;
       }
