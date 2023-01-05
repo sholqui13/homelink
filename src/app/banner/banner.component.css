@@ -1,0 +1,52 @@
+.banner {
+  background-image: url("../../../../assets/images/background/background-mobile.png");
+  background-repeat: no-repeat;
+  background-size: 79.6rem;
+  background-position-x: center;
+  background-position-y: 14rem;
+  min-height: 93.8rem;
+}
+.banner-container {
+  margin: 0 1.5rem;
+}
+.banner-container_picture img {
+  width: -webkit-fill-available;
+  height: auto;
+  margin-top: 1.2rem;
+  margin-bottom: 1.28rem;
+}
+.banner-container_info .banner-left .tree {
+  display: none;
+}
+.banner-container_info .banner-left .title-banner h1 {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 3.5rem;
+  line-height: 3.6rem;
+  text-transform: capitalize;
+  margin-bottom: 2rem;
+}
+.banner-container_info .banner-left .title-banner h1 span {
+  color: #75D827;
+}
+.banner-container_info .banner-left .title-banner .map {
+  display: none;
+}
+.banner-container_info .buttons .text-banner {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+  letter-spacing: -0.015em;
+  margin-bottom: 2rem;
+}
+.banner-container_info .buttons_cta {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: 540px) {
+  .banner-container {
+    margin: 0 5.5rem;
+  }
+}/*# sourceMappingURL=banner.component.css.map */

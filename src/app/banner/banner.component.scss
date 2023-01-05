@@ -1,0 +1,66 @@
+@import '../../assets/scss/config/variables';
+@import '../../assets/scss/config/mixins';
+
+.banner{
+    background-image: url("../../../../assets/images/background/background-mobile.png");
+    background-repeat: no-repeat;
+    background-size: 79.6rem;
+    background-position-x: center;
+    background-position-y: 14rem;
+    min-height: 93.8rem;
+    &-container{
+        margin: 0 1.5rem;
+        &_picture{
+            img{
+                width: -webkit-fill-available;
+                height: auto;
+                margin-top: 1.2rem;
+                margin-bottom: 1.28rem;
+            }
+        }
+        &_info{
+            .banner-left{
+                .tree{
+                    display: none;
+                }
+                .title-banner{
+                    h1{
+                        color: color(grayscale, white);
+                        font-weight: 700;
+                        font-size: 3.5rem;
+                        line-height: 3.6rem;
+                        text-transform: capitalize;
+                        margin-bottom: 2rem;
+                        span{
+                            color: #75D827;
+                        }
+                    }
+                    .map{
+                        display: none;
+                    }
+                }
+            }
+            .buttons{
+                .text-banner{
+                    color: color(grayscale, white);
+                    font-weight: 700;
+                    font-size: 1.8rem;
+                    line-height: 3.2rem;
+                    letter-spacing: -0.015em;
+                    margin-bottom: 2rem;
+                }
+                &_cta{
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
+        }
+    }
+}
+@include mq-min(sm){
+    .banner{
+        &-container{
+            margin: 0 5.5rem;
+        }
+    }
+}
