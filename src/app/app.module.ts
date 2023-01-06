@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { BannerComponent } from "./banner/banner.component";
 import { BannerModule } from './banner/banner.module';
+import { ArticlesHomeComponent } from './articles-home/articles-home.component';
 
 @NgModule({
     declarations: [
         AppComponent,
         HeaderComponent,
-        BannerComponent
+        BannerComponent,
+        ArticlesHomeComponent
     ],
     providers: [],
     bootstrap: [AppComponent],
