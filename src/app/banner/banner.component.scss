@@ -2,7 +2,7 @@
 @import '../../assets/scss/config/mixins';
 
 .banner{
-    background-image: url("../../../../assets/images/background/background-mobile.png");
+    background-image: url(../../assets/images/background/background-mobile.png);
     background-repeat: no-repeat;
     background-size: 79.6rem;
     background-position-x: center;
@@ -12,7 +12,7 @@
         margin: 0 1.5rem;
         &_picture{
             img{
-                width: -webkit-fill-available;
+                width: 100%;
                 height: auto;
                 margin-top: 1.2rem;
                 margin-bottom: 1.28rem;
@@ -26,8 +26,8 @@
                 .title-banner{
                     h1{
                         color: color(grayscale, white);
-                        font-weight: 700;
-                        font-size: 3.5rem;
+                        font-weight: 600;
+                        font-size: 3.6rem;
                         line-height: 3.6rem;
                         text-transform: capitalize;
                         margin-bottom: 2rem;
@@ -43,7 +43,7 @@
             .buttons{
                 .text-banner{
                     color: color(grayscale, white);
-                    font-weight: 700;
+                    font-weight: 600;
                     font-size: 1.8rem;
                     line-height: 3.2rem;
                     letter-spacing: -0.015em;
@@ -59,8 +59,100 @@
 }
 @include mq-min(sm){
     .banner{
+        background-size: auto;
         &-container{
             margin: 0 5.5rem;
+            &_info{
+                .buttons{
+                    &_cta{
+                        justify-content: flex-start;
+                        .btn-primary{
+                            margin-right: 3.2rem;
+                        }
+                    }
+                }
+            }
         }
+    }
+}
+@include mq-min(xl){
+    .banner{
+        background-image: url(../../assets/images/background/azulOscuro.png);
+        background-repeat: no-repeat;
+        background-position-x: left;
+        background-position-y: 0rem;
+        background-size: contain;
+        &-container{
+            margin: auto;
+            display: flex;
+            flex-direction: row-reverse;
+            width: 100%;
+            max-width: 175.5rem;
+            &_picture{
+                max-width: 88.6rem;
+                margin-top: 9.2rem;
+            }
+            &_info{
+                margin-top: 18.2rem;
+                .banner-left{
+                    display: flex;
+                    align-items: flex-end;
+                    .tree{
+                        display: block;
+                    }
+                    .title-banner{
+                        margin-left: -4rem;
+                        h1{
+                            margin-bottom: 0;
+                            font-size: 2.5rem;
+                            line-height: 4rem;
+                            font-weight: 600;
+                            max-width: 63.7rem;
+                        }
+                        .map{
+                            display: block;
+                            margin-left: 8.5rem;
+                        }
+                    }
+                }
+                .buttons{
+                    &_cta{
+                        justify-content: flex-start;
+                        padding-left: 7.8rem;
+                        .btn-primary{
+                            margin-right: 3.2rem;
+                        }
+                    }
+                    .text-banner{
+                        font-weight: 600;
+                        margin-top: 1rem;
+                        margin-bottom: 3.8rem;
+                        margin-left: 8rem;
+                    }
+                }
+            }
+        }
+    }
+}
+@include mq-min(xxl){
+    .banner{
+        &-container{
+            &_info{
+                .banner-left{
+                    .title-banner{
+                        h1{
+                            font-size: 4.4rem;
+                            line-height: 4.6rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@include mq-min(xxxl){
+    .banner{
+        background-size: 60%;
+        background-position-y: bottom;
     }
 }

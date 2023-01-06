@@ -1,5 +1,5 @@
 .banner {
-  background-image: url("../../../../assets/images/background/background-mobile.png");
+  background-image: url(../../assets/images/background/background-mobile.png);
   background-repeat: no-repeat;
   background-size: 79.6rem;
   background-position-x: center;
@@ -10,7 +10,7 @@
   margin: 0 1.5rem;
 }
 .banner-container_picture img {
-  width: -webkit-fill-available;
+  width: 100%;
   height: auto;
   margin-top: 1.2rem;
   margin-bottom: 1.28rem;
@@ -20,8 +20,8 @@
 }
 .banner-container_info .banner-left .title-banner h1 {
   color: #ffffff;
-  font-weight: 700;
-  font-size: 3.5rem;
+  font-weight: 600;
+  font-size: 3.6rem;
   line-height: 3.6rem;
   text-transform: capitalize;
   margin-bottom: 2rem;
@@ -34,7 +34,7 @@
 }
 .banner-container_info .buttons .text-banner {
   color: #ffffff;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 1.8rem;
   line-height: 3.2rem;
   letter-spacing: -0.015em;
@@ -46,7 +46,85 @@
 }
 
 @media (min-width: 540px) {
+  .banner {
+    background-size: auto;
+  }
   .banner-container {
     margin: 0 5.5rem;
+  }
+  .banner-container_info .buttons_cta {
+    justify-content: flex-start;
+  }
+  .banner-container_info .buttons_cta .btn-primary {
+    margin-right: 3.2rem;
+  }
+}
+@media (min-width: 1140px) {
+  .banner {
+    background-image: url(../../assets/images/background/azulOscuro.png);
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-position-y: 0rem;
+    background-size: contain;
+  }
+  .banner-container {
+    margin: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    max-width: 175.5rem;
+  }
+  .banner-container_picture {
+    max-width: 88.6rem;
+    margin-top: 9.2rem;
+  }
+  .banner-container_info {
+    margin-top: 18.2rem;
+  }
+  .banner-container_info .banner-left {
+    display: flex;
+    align-items: flex-end;
+  }
+  .banner-container_info .banner-left .tree {
+    display: block;
+  }
+  .banner-container_info .banner-left .title-banner {
+    margin-left: -4rem;
+  }
+  .banner-container_info .banner-left .title-banner h1 {
+    margin-bottom: 0;
+    font-size: 2.5rem;
+    line-height: 4rem;
+    font-weight: 600;
+    max-width: 63.7rem;
+  }
+  .banner-container_info .banner-left .title-banner .map {
+    display: block;
+    margin-left: 8.5rem;
+  }
+  .banner-container_info .buttons_cta {
+    justify-content: flex-start;
+    padding-left: 7.8rem;
+  }
+  .banner-container_info .buttons_cta .btn-primary {
+    margin-right: 3.2rem;
+  }
+  .banner-container_info .buttons .text-banner {
+    font-weight: 600;
+    margin-top: 1rem;
+    margin-bottom: 3.8rem;
+    margin-left: 8rem;
+  }
+}
+@media (min-width: 1440px) {
+  .banner-container_info .banner-left .title-banner h1 {
+    font-size: 4.4rem;
+    line-height: 4.6rem;
+  }
+}
+@media (min-width: 2170px) {
+  .banner {
+    background-size: 60%;
+    background-position-y: bottom;
   }
 }/*# sourceMappingURL=banner.component.css.map */
