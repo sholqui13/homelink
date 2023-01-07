@@ -18,6 +18,10 @@ body {
 	height: 100%;
 }
 
+.container-app{
+  background-color: color(primary,base);
+}
+
 p {
   margin-bottom: map-get($sizes, "base");
 }

@@ -1,2 +1,143 @@
 @import '../../assets/scss/config/variables';
 @import '../../assets/scss/config/mixins';
+
+.articles{
+    background-image: url(../../assets/images/background/afterBack-Mobile.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: -12rem;
+    background-size: 80%;
+    padding-top: 20.3rem;
+    .birds{
+        background-image: url(../../assets/images/background/background-notice.png);
+        background-repeat: no-repeat;
+        background-position-x: inherit;
+        background-position-y: 9rem;
+        min-height: 77rem;
+        background-size: cover;
+        .articles_container{
+            margin-left: 2rem;
+            margin-right: 2rem;
+            &_picture{
+                .title{
+                    color: color(grayscale, white);
+                    font-weight: 600;
+                    font-size: 3.6rem;
+                    margin-top: 6.8rem;
+                    line-height: 3.6rem;
+                    text-transform: capitalize;
+                    margin-bottom: 2rem;
+                    span{
+                        color: #75D827;
+                    }
+                }
+                .house{
+                    img{
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+            &_info{
+                .paragraph{
+                    font-weight: 400;
+                    font-size: 1.6rem;
+                    line-height: 3rem;
+                    color: color(grayscale, white);
+                }
+                .buttons_cta{
+                    display: flex;
+                    margin-top: 3.3rem;
+                    justify-content: space-between;
+                    .btn{
+                        padding: 10.5px 32px;
+                    }
+                }
+            }
+        }
+    }
+}
+@include mq-min(sm){
+    .articles{
+        .birds{
+            .articles_container{
+                margin-left: 5.5rem;
+                margin-right: 5.5rem;
+                &_info{
+                    .buttons_cta{
+                        justify-content: flex-start;
+                        .btn-primary{
+                            margin-right: 3.2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@include mq-min(md){
+    .articles{
+        background-size: 50%;
+    }
+}
+@include mq-min(xl){
+    .articles{
+        background-image: url(../../assets/images/background/afterBack-Desktop.png);
+        background-position-y: 6rem;
+        background-size: 80%;
+        padding-top: 35.3rem;
+        .birds{
+            background-image: url(../../assets/images/background/background-notice-desktop.png);
+            .articles_container{
+                // margin: auto;
+                max-width: 156rem;
+                &_picture{
+                    align-items: flex-end;
+                    flex-direction: row-reverse;
+                    .title{
+                        font-weight: 600;
+                        font-size: 2.5rem;
+                        line-height: 4rem;
+                        max-width: 63.7rem;
+                        margin-right: 10%;
+                    }
+                }
+                &_info{
+                    .paragraph{
+                        display: flex;
+                        justify-content: space-between;
+                        p{
+                            &:nth-child(1){
+                                max-width: 77.2rem;
+                                margin-right: 4rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@include mq-min(xxl){
+    .articles{
+        .birds{
+            .articles_container{
+                &_picture{
+                    .title{
+                        font-size: 4.8rem;
+                        line-height: 4.6rem;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 1650px){
+    .articles{
+        .birds{
+            .articles_container{
+                margin: auto;
+            }
+        }
+    }
+}

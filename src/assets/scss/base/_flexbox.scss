@@ -46,7 +46,7 @@ $dflexs: flex, inline-flex, block, inline-block, grid, none;
 $directions: row, row-reverse, column, column-reverse;
 @each $dflex in $directions {
    .fd-#{$dflex} {
-      display: $dflex;
+      flex-direction: $dflex;
    }
 }
 

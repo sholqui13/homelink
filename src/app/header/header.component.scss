@@ -2,6 +2,7 @@
 @import '../../assets/scss/config/mixins';
 
 header{
+    background-color: color(grayscale, white);
     border-bottom: 0.1rem solid #646566;
     height: 9.6rem;
     max-height: 9.8rem;

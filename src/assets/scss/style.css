@@ -159,6 +159,10 @@ body {
   height: 100%;
 }
 
+.container-app {
+  background-color: #F2F2F2;
+}
+
 p {
   margin-bottom: 1.6rem;
 }
@@ -322,19 +326,19 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
   }
 }
 .fd-row {
-  display: row;
+  flex-direction: row;
 }
 
 .fd-row-reverse {
-  display: row-reverse;
+  flex-direction: row-reverse;
 }
 
 .fd-column {
-  display: column;
+  flex-direction: column;
 }
 
 .fd-column-reverse {
-  display: column-reverse;
+  flex-direction: column-reverse;
 }
 
 .jc-flex-start {

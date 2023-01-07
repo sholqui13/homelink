@@ -50,6 +50,7 @@
     background-size: auto;
   }
   .banner-container {
+    padding-bottom: 10rem;
     margin: 0 5.5rem;
   }
   .banner-container_info .buttons_cta {
