@@ -4,12 +4,13 @@
   background-size: 79.6rem;
   background-position-x: center;
   background-position-y: 14rem;
-  min-height: 93.8rem;
+  min-height: 96.8rem;
 }
 .banner-container {
   margin: 0 1.5rem;
 }
 .banner-container_picture img {
+  cursor: pointer;
   width: 100%;
   height: auto;
   margin-top: 1.2rem;
@@ -67,6 +68,7 @@
     background-position-x: left;
     background-position-y: 0rem;
     background-size: contain;
+    min-height: 96.8rem;
   }
   .banner-container {
     margin: auto;

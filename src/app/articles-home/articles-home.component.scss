@@ -15,6 +15,7 @@
         background-position-y: 9rem;
         min-height: 77rem;
         background-size: cover;
+        padding-bottom: 3rem;
         .articles_container{
             margin-left: 2rem;
             margin-right: 2rem;
@@ -86,6 +87,8 @@
         background-position-y: 6rem;
         background-size: 80%;
         padding-top: 35.3rem;
+        position: relative;
+        bottom: 16rem;
         .birds{
             background-image: url(../../assets/images/background/background-notice-desktop.png);
             .articles_container{
@@ -134,6 +137,8 @@
 }
 @media (min-width: 1650px){
     .articles{
+        background-size: 70%;
+        background-position: right 0%;
         .birds{
             .articles_container{
                 margin: auto;
